@@ -1,0 +1,2 @@
+part1.DAO.DaoImplWBS
+part1.Metier.MetierImpl
