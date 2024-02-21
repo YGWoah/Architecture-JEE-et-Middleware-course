@@ -1,6 +1,6 @@
 <beans>
-    <bean id="dao" class="ma.enset.DAO.DaoImplWBS"/>
-    <bean id="metier" class="ma.enset.Metier.MetierImpl">
-        <property name="dao" ref="dao"/>
+    <bean id="dao" class="ma.enset.DAO.DaoImpl"/>
+    <bean id="metier" class="ma.enset.Metier.MetierImplV2">
+        <constructor-arg ref="dao" />
     </bean>
 </beans>

@@ -11,6 +11,7 @@ public class Bean {
     private String id;
     private String className;
     private List<Property> properties;
+    private List<ConstructorArg> constructorArgs;
 
     @XmlAttribute
     public String getId() {
@@ -38,5 +39,14 @@ public class Bean {
     public void setProperties(List<Property> properties) {
         this.properties = properties;
     }
+
+    @XmlElement(name = "constructor-arg")
+    public List<ConstructorArg> getConstructorArgs(){return constructorArgs;}
+
+    public void setConstructorArgs(List<ConstructorArg> constructorArgs){
+        this.constructorArgs = constructorArgs;
+    }
+
 }
+
 
